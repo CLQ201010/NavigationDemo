@@ -45,7 +45,7 @@
         UIViewController* v1 = [tabBar.viewControllers objectAtIndex:selectedIndex-1];
         UIImage* image1 = [self imageByCropping:v1.view toRect:v1.view.bounds];
         self.leftImgView = [[UIImageView alloc] initWithImage:image1];
-        self.leftImgView.frame = CGRectMake(self.leftImgView.frame.origin.x - [UIScreen mainScreen].bounds.size.width, self.leftImgView.frame.origin.y , self.leftImgView.frame.size.width, self.leftImgView.frame.size.height);
+        self.leftImgView.frame = CGRectMake(self.leftImgView.frame.origin.x - kScreenWidth, self.leftImgView.frame.origin.y , self.leftImgView.frame.size.width, self.leftImgView.frame.size.height);
         [self.view addSubview:self.leftImgView];
     }
     
@@ -54,7 +54,7 @@
         UIViewController* v2 = [tabBar.viewControllers objectAtIndex:selectedIndex+1];
         UIImage* image2 = [self imageByCropping:v2.view toRect:v2.view.bounds];
         self.rightImgView = [[UIImageView alloc] initWithImage:image2];
-        self.rightImgView.frame = CGRectMake(self.rightImgView.frame.origin.x + [UIScreen mainScreen].bounds.size.width, 0, self.rightImgView.frame.size.width, self.rightImgView.frame.size.height);
+        self.rightImgView.frame = CGRectMake(self.rightImgView.frame.origin.x + kScreenWidth, 0, self.rightImgView.frame.size.width, self.rightImgView.frame.size.height);
         [self.view addSubview:self.rightImgView];
     }
 }
@@ -76,12 +76,12 @@
 -(UIImage*)imageByCropping:(UIView*)imageToCrop toRect:(CGRect)rect
 {
     CGFloat scale = [[UIScreen mainScreen] scale];
-    CGSize pageSize = CGSizeMake(scale*rect.size.width, scale*rect.size.height) ;
+    CGSize pageSize = CGSizeMake(scale * rect.size.width, scale * rect.size.height) ;
     UIGraphicsBeginImageContext(pageSize);
     CGContextScaleCTM(UIGraphicsGetCurrentContext(), scale, scale);
     
     CGContextRef resizedContext =UIGraphicsGetCurrentContext();
-    CGContextTranslateCTM(resizedContext,-1*rect.origin.x,-1*rect.origin.y);
+    CGContextTranslateCTM(resizedContext, -1 * rect.origin.x, -1 * rect.origin.y);
     [imageToCrop.layer renderInContext:resizedContext];
     UIImage*imageOriginBackground =UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
@@ -99,14 +99,14 @@
     CGPoint point = [recongizer translationInView:self.view];
     
     if (selectedIndex == 0) {
-        if (recongizer.view.center.x + point.x >  [UIScreen mainScreen].bounds.size.width/2) {
-            recongizer.view.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2, recongizer.view.center.y);
+        if (recongizer.view.center.x + point.x >  kScreenWidth / 2) {
+            recongizer.view.center = CGPointMake(kScreenWidth / 2, recongizer.view.center.y);
         } else {
             recongizer.view.center = CGPointMake(recongizer.view.center.x + point.x, recongizer.view.center.y);
         }
-    } else if (selectedIndex == tabBar.viewControllers.count -1 ) {
-        if (recongizer.view.center.x + point.x <  [UIScreen mainScreen].bounds.size.width/2) {
-            recongizer.view.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2, recongizer.view.center.y);
+    } else if (selectedIndex == tabBar.viewControllers.count - 1 ) {
+        if (recongizer.view.center.x + point.x <  kScreenWidth / 2) {
+            recongizer.view.center = CGPointMake(kScreenWidth / 2, recongizer.view.center.y);
         } else {
             recongizer.view.center = CGPointMake(recongizer.view.center.x + point.x, recongizer.view.center.y);
         }
@@ -117,28 +117,28 @@
     [recongizer setTranslation:CGPointMake(0, 0) inView:self.view];
     
     if (recongizer.state == UIGestureRecognizerStateEnded) {
-        if (recongizer.view.center.x < [UIScreen mainScreen].bounds.size.width && recongizer.view.center.x > 0 ) {
+        if (recongizer.view.center.x < kScreenWidth && recongizer.view.center.x > 0 ) {
             [UIView animateWithDuration:0.3f delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-                recongizer.view.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2 ,[UIScreen mainScreen].bounds.size.height/2);
+                recongizer.view.center = CGPointMake(kScreenWidth / 2, kScreenHeight / 2);
             }completion:^(BOOL finished) {
                 
             }];
         } else if (recongizer.view.center.x <= 0 ){
             if (selectedIndex < tabBar.viewControllers.count - 1) {
                 [UIView animateWithDuration:0.3f delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-                    recongizer.view.center = CGPointMake(-[UIScreen mainScreen].bounds.size.width/2 ,[UIScreen mainScreen].bounds.size.height/2);
+                    recongizer.view.center = CGPointMake(-kScreenWidth / 2, kScreenHeight / 2);
                 }completion:^(BOOL finished) {
                     [tabBar setSelectedIndex:selectedIndex + 1];
-                    recongizer.view.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2 ,[UIScreen mainScreen].bounds.size.height/2);
+                    recongizer.view.center = CGPointMake(kScreenWidth / 2, kScreenHeight / 2);
                 }];
             }
         } else {
             if (selectedIndex > 0) {
                 [UIView animateWithDuration:0.3f delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-                    recongizer.view.center = CGPointMake([UIScreen mainScreen].bounds.size.width*1.5 ,[UIScreen mainScreen].bounds.size.height/2);
+                    recongizer.view.center = CGPointMake(kScreenWidth * 1.5, kScreenHeight / 2);
                 }completion:^(BOOL finished) {
                     [tabBar setSelectedIndex:selectedIndex - 1];
-                    recongizer.view.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2 ,[UIScreen mainScreen].bounds.size.height/2);
+                    recongizer.view.center = CGPointMake(kScreenWidth / 2, kScreenHeight / 2);
                 }];
             }
         }
