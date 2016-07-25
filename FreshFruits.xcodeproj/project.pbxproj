@@ -1,0 +1,859 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23DA1A141D4210BF00550329 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1A131D4210BF00550329 /* main.m */; };
+		23DA1A171D4210BF00550329 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1A161D4210BF00550329 /* AppDelegate.m */; };
+		23DA1A1F1D4210BF00550329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23DA1A1E1D4210BF00550329 /* Assets.xcassets */; };
+		23DA1A2D1D4210BF00550329 /* FreshFruitsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1A2C1D4210BF00550329 /* FreshFruitsTests.m */; };
+		23DA1A381D4210BF00550329 /* FreshFruitsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1A371D4210BF00550329 /* FreshFruitsUITests.m */; };
+		23DA1A651D42187900550329 /* LauncherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1A621D42187900550329 /* LauncherViewController.m */; };
+		23DA1A791D42203700550329 /* UIImage+CH.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1A781D42203700550329 /* UIImage+CH.m */; };
+		23DA1A7F1D42223600550329 /* UIBarButtonItem+CH.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1A7C1D42223600550329 /* UIBarButtonItem+CH.m */; };
+		23DA1A801D42223600550329 /* UIView+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1A7E1D42223600550329 /* UIView+MJ.m */; };
+		23DA1A881D42239C00550329 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1A871D42239C00550329 /* HomeViewController.m */; };
+		23DA1A8B1D4223B200550329 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1A8A1D4223B200550329 /* MeViewController.m */; };
+		23DA1A8E1D430D3500550329 /* ClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1A8D1D430D3500550329 /* ClassifyViewController.m */; };
+		23DA1A911D430D5D00550329 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1A901D430D5D00550329 /* NewsViewController.m */; };
+		23DA1A981D430E4200550329 /* FeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1A971D430E4200550329 /* FeatureViewController.m */; };
+		23DA1A9C1D43126700550329 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23DA1A9B1D43126700550329 /* Default-568h@2x.png */; };
+		23DA1A9F1D43535C00550329 /* GTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1A9E1D43535C00550329 /* GTTabBarController.m */; };
+		23DA1AA21D43536800550329 /* GTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1AA11D43536800550329 /* GTTabBar.m */; };
+		23DA1AA51D4357D200550329 /* MainFrameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1AA41D4357D200550329 /* MainFrameManager.m */; };
+		23DA1AA81D437FEF00550329 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1AA71D437FEF00550329 /* BaseViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23DA1A291D4210BF00550329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23DA1A071D4210BF00550329 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23DA1A0E1D4210BF00550329;
+			remoteInfo = FreshFruits;
+		};
+		23DA1A341D4210BF00550329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23DA1A071D4210BF00550329 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23DA1A0E1D4210BF00550329;
+			remoteInfo = FreshFruits;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23DA1A0F1D4210BF00550329 /* FreshFruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshFruits.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23DA1A131D4210BF00550329 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		23DA1A151D4210BF00550329 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		23DA1A161D4210BF00550329 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		23DA1A1E1D4210BF00550329 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23DA1A231D4210BF00550329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23DA1A281D4210BF00550329 /* FreshFruitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreshFruitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23DA1A2C1D4210BF00550329 /* FreshFruitsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreshFruitsTests.m; sourceTree = "<group>"; };
+		23DA1A2E1D4210BF00550329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23DA1A331D4210BF00550329 /* FreshFruitsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreshFruitsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23DA1A371D4210BF00550329 /* FreshFruitsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreshFruitsUITests.m; sourceTree = "<group>"; };
+		23DA1A391D4210BF00550329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23DA1A611D42187900550329 /* LauncherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LauncherViewController.h; sourceTree = "<group>"; };
+		23DA1A621D42187900550329 /* LauncherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LauncherViewController.m; sourceTree = "<group>"; };
+		23DA1A771D42203700550329 /* UIImage+CH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CH.h"; sourceTree = "<group>"; };
+		23DA1A781D42203700550329 /* UIImage+CH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CH.m"; sourceTree = "<group>"; };
+		23DA1A7A1D4220AB00550329 /* FreshFruits-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FreshFruits-prefix.pch"; sourceTree = "<group>"; };
+		23DA1A7B1D42223600550329 /* UIBarButtonItem+CH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+CH.h"; sourceTree = "<group>"; };
+		23DA1A7C1D42223600550329 /* UIBarButtonItem+CH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+CH.m"; sourceTree = "<group>"; };
+		23DA1A7D1D42223600550329 /* UIView+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJ.h"; sourceTree = "<group>"; };
+		23DA1A7E1D42223600550329 /* UIView+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJ.m"; sourceTree = "<group>"; };
+		23DA1A841D42237500550329 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		23DA1A851D42237500550329 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		23DA1A861D42239C00550329 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		23DA1A871D42239C00550329 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		23DA1A891D4223B200550329 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		23DA1A8A1D4223B200550329 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		23DA1A8C1D430D3500550329 /* ClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassifyViewController.h; sourceTree = "<group>"; };
+		23DA1A8D1D430D3500550329 /* ClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassifyViewController.m; sourceTree = "<group>"; };
+		23DA1A8F1D430D5D00550329 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		23DA1A901D430D5D00550329 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		23DA1A961D430E4200550329 /* FeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureViewController.h; sourceTree = "<group>"; };
+		23DA1A971D430E4200550329 /* FeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureViewController.m; sourceTree = "<group>"; };
+		23DA1A9B1D43126700550329 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		23DA1A9D1D43535C00550329 /* GTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTTabBarController.h; sourceTree = "<group>"; };
+		23DA1A9E1D43535C00550329 /* GTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTTabBarController.m; sourceTree = "<group>"; };
+		23DA1AA01D43536800550329 /* GTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTTabBar.h; sourceTree = "<group>"; };
+		23DA1AA11D43536800550329 /* GTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTTabBar.m; sourceTree = "<group>"; };
+		23DA1AA31D4357D200550329 /* MainFrameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainFrameManager.h; sourceTree = "<group>"; };
+		23DA1AA41D4357D200550329 /* MainFrameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainFrameManager.m; sourceTree = "<group>"; };
+		23DA1AA61D437FEF00550329 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		23DA1AA71D437FEF00550329 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23DA1A0C1D4210BF00550329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23DA1A251D4210BF00550329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23DA1A301D4210BF00550329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23DA1A061D4210BF00550329 = {
+			isa = PBXGroup;
+			children = (
+				23DA1A111D4210BF00550329 /* FreshFruits */,
+				23DA1A2B1D4210BF00550329 /* FreshFruitsTests */,
+				23DA1A361D4210BF00550329 /* FreshFruitsUITests */,
+				23DA1A101D4210BF00550329 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23DA1A101D4210BF00550329 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A0F1D4210BF00550329 /* FreshFruits.app */,
+				23DA1A281D4210BF00550329 /* FreshFruitsTests.xctest */,
+				23DA1A331D4210BF00550329 /* FreshFruitsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23DA1A111D4210BF00550329 /* FreshFruits */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A991D43126700550329 /* Resource */,
+				23DA1A751D42203700550329 /* Utils */,
+				23DA1A451D4216C300550329 /* Classes */,
+				23DA1A151D4210BF00550329 /* AppDelegate.h */,
+				23DA1A161D4210BF00550329 /* AppDelegate.m */,
+				23DA1A1E1D4210BF00550329 /* Assets.xcassets */,
+				23DA1A231D4210BF00550329 /* Info.plist */,
+				23DA1A121D4210BF00550329 /* Supporting Files */,
+			);
+			path = FreshFruits;
+			sourceTree = "<group>";
+		};
+		23DA1A121D4210BF00550329 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A131D4210BF00550329 /* main.m */,
+				23DA1A7A1D4220AB00550329 /* FreshFruits-prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		23DA1A2B1D4210BF00550329 /* FreshFruitsTests */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A2C1D4210BF00550329 /* FreshFruitsTests.m */,
+				23DA1A2E1D4210BF00550329 /* Info.plist */,
+			);
+			path = FreshFruitsTests;
+			sourceTree = "<group>";
+		};
+		23DA1A361D4210BF00550329 /* FreshFruitsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A371D4210BF00550329 /* FreshFruitsUITests.m */,
+				23DA1A391D4210BF00550329 /* Info.plist */,
+			);
+			path = FreshFruitsUITests;
+			sourceTree = "<group>";
+		};
+		23DA1A451D4216C300550329 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A921D430E2E00550329 /* 精选 */,
+				23DA1A6F1D421AED00550329 /* 分类 */,
+				23DA1A481D4216C300550329 /* 我 */,
+				23DA1A491D4216C300550329 /* 资讯 */,
+				23DA1A4A1D4216C400550329 /* 首页 */,
+				23DA1A471D4216C300550329 /* 启动页 */,
+				23DA1A461D4216C300550329 /* 主框架 */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		23DA1A461D4216C300550329 /* 主框架 */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A4E1D42181B00550329 /* Controller */,
+				23DA1A531D42181B00550329 /* Model */,
+				23DA1A541D42181B00550329 /* View */,
+			);
+			path = "主框架";
+			sourceTree = "<group>";
+		};
+		23DA1A471D4216C300550329 /* 启动页 */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A601D42187900550329 /* Controller */,
+				23DA1A631D42187900550329 /* Model */,
+				23DA1A641D42187900550329 /* View */,
+			);
+			path = "启动页";
+			sourceTree = "<group>";
+		};
+		23DA1A481D4216C300550329 /* 我 */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A691D421A5000550329 /* Controller */,
+				23DA1A6A1D421A5000550329 /* Model */,
+				23DA1A6B1D421A5000550329 /* View */,
+			);
+			name = "我";
+			path = "用户";
+			sourceTree = "<group>";
+		};
+		23DA1A491D4216C300550329 /* 资讯 */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A661D421A4300550329 /* Controller */,
+				23DA1A671D421A4300550329 /* Model */,
+				23DA1A681D421A4300550329 /* View */,
+			);
+			path = "资讯";
+			sourceTree = "<group>";
+		};
+		23DA1A4A1D4216C400550329 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A6C1D421ACA00550329 /* Controller */,
+				23DA1A6D1D421ACA00550329 /* Model */,
+				23DA1A6E1D421ACA00550329 /* View */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		23DA1A4E1D42181B00550329 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A9D1D43535C00550329 /* GTTabBarController.h */,
+				23DA1A9E1D43535C00550329 /* GTTabBarController.m */,
+				23DA1AA31D4357D200550329 /* MainFrameManager.h */,
+				23DA1AA41D4357D200550329 /* MainFrameManager.m */,
+				23DA1AA61D437FEF00550329 /* BaseViewController.h */,
+				23DA1AA71D437FEF00550329 /* BaseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23DA1A531D42181B00550329 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23DA1A541D42181B00550329 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1AA01D43536800550329 /* GTTabBar.h */,
+				23DA1AA11D43536800550329 /* GTTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		23DA1A601D42187900550329 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A611D42187900550329 /* LauncherViewController.h */,
+				23DA1A621D42187900550329 /* LauncherViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23DA1A631D42187900550329 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23DA1A641D42187900550329 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		23DA1A661D421A4300550329 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A8F1D430D5D00550329 /* NewsViewController.h */,
+				23DA1A901D430D5D00550329 /* NewsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23DA1A671D421A4300550329 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23DA1A681D421A4300550329 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		23DA1A691D421A5000550329 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A891D4223B200550329 /* MeViewController.h */,
+				23DA1A8A1D4223B200550329 /* MeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23DA1A6A1D421A5000550329 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23DA1A6B1D421A5000550329 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		23DA1A6C1D421ACA00550329 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A861D42239C00550329 /* HomeViewController.h */,
+				23DA1A871D42239C00550329 /* HomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23DA1A6D1D421ACA00550329 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23DA1A6E1D421ACA00550329 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		23DA1A6F1D421AED00550329 /* 分类 */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A701D421AED00550329 /* Controller */,
+				23DA1A711D421AED00550329 /* Model */,
+				23DA1A721D421AED00550329 /* View */,
+			);
+			path = "分类";
+			sourceTree = "<group>";
+		};
+		23DA1A701D421AED00550329 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A8C1D430D3500550329 /* ClassifyViewController.h */,
+				23DA1A8D1D430D3500550329 /* ClassifyViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23DA1A711D421AED00550329 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23DA1A721D421AED00550329 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		23DA1A751D42203700550329 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A831D42237500550329 /* Common */,
+				23DA1A761D42203700550329 /* Category */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		23DA1A761D42203700550329 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A7B1D42223600550329 /* UIBarButtonItem+CH.h */,
+				23DA1A7C1D42223600550329 /* UIBarButtonItem+CH.m */,
+				23DA1A7D1D42223600550329 /* UIView+MJ.h */,
+				23DA1A7E1D42223600550329 /* UIView+MJ.m */,
+				23DA1A771D42203700550329 /* UIImage+CH.h */,
+				23DA1A781D42203700550329 /* UIImage+CH.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		23DA1A831D42237500550329 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A841D42237500550329 /* Common.h */,
+				23DA1A851D42237500550329 /* Singleton.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		23DA1A921D430E2E00550329 /* 精选 */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A931D430E2E00550329 /* Controller */,
+				23DA1A941D430E2E00550329 /* Model */,
+				23DA1A951D430E2E00550329 /* View */,
+			);
+			path = "精选";
+			sourceTree = "<group>";
+		};
+		23DA1A931D430E2E00550329 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A961D430E4200550329 /* FeatureViewController.h */,
+				23DA1A971D430E4200550329 /* FeatureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23DA1A941D430E2E00550329 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23DA1A951D430E2E00550329 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		23DA1A991D43126700550329 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A9A1D43126700550329 /* Launcher */,
+			);
+			name = Resource;
+			path = Res;
+			sourceTree = "<group>";
+		};
+		23DA1A9A1D43126700550329 /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				23DA1A9B1D43126700550329 /* Default-568h@2x.png */,
+			);
+			path = Launcher;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23DA1A0E1D4210BF00550329 /* FreshFruits */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23DA1A3C1D4210BF00550329 /* Build configuration list for PBXNativeTarget "FreshFruits" */;
+			buildPhases = (
+				23DA1A0B1D4210BF00550329 /* Sources */,
+				23DA1A0C1D4210BF00550329 /* Frameworks */,
+				23DA1A0D1D4210BF00550329 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreshFruits;
+			productName = FreshFruits;
+			productReference = 23DA1A0F1D4210BF00550329 /* FreshFruits.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23DA1A271D4210BF00550329 /* FreshFruitsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23DA1A3F1D4210BF00550329 /* Build configuration list for PBXNativeTarget "FreshFruitsTests" */;
+			buildPhases = (
+				23DA1A241D4210BF00550329 /* Sources */,
+				23DA1A251D4210BF00550329 /* Frameworks */,
+				23DA1A261D4210BF00550329 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23DA1A2A1D4210BF00550329 /* PBXTargetDependency */,
+			);
+			name = FreshFruitsTests;
+			productName = FreshFruitsTests;
+			productReference = 23DA1A281D4210BF00550329 /* FreshFruitsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		23DA1A321D4210BF00550329 /* FreshFruitsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23DA1A421D4210BF00550329 /* Build configuration list for PBXNativeTarget "FreshFruitsUITests" */;
+			buildPhases = (
+				23DA1A2F1D4210BF00550329 /* Sources */,
+				23DA1A301D4210BF00550329 /* Frameworks */,
+				23DA1A311D4210BF00550329 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23DA1A351D4210BF00550329 /* PBXTargetDependency */,
+			);
+			name = FreshFruitsUITests;
+			productName = FreshFruitsUITests;
+			productReference = 23DA1A331D4210BF00550329 /* FreshFruitsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23DA1A071D4210BF00550329 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = clq;
+				TargetAttributes = {
+					23DA1A0E1D4210BF00550329 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					23DA1A271D4210BF00550329 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 23DA1A0E1D4210BF00550329;
+					};
+					23DA1A321D4210BF00550329 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 23DA1A0E1D4210BF00550329;
+					};
+				};
+			};
+			buildConfigurationList = 23DA1A0A1D4210BF00550329 /* Build configuration list for PBXProject "FreshFruits" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23DA1A061D4210BF00550329;
+			productRefGroup = 23DA1A101D4210BF00550329 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23DA1A0E1D4210BF00550329 /* FreshFruits */,
+				23DA1A271D4210BF00550329 /* FreshFruitsTests */,
+				23DA1A321D4210BF00550329 /* FreshFruitsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23DA1A0D1D4210BF00550329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23DA1A1F1D4210BF00550329 /* Assets.xcassets in Resources */,
+				23DA1A9C1D43126700550329 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23DA1A261D4210BF00550329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23DA1A311D4210BF00550329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23DA1A0B1D4210BF00550329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23DA1A801D42223600550329 /* UIView+MJ.m in Sources */,
+				23DA1AA81D437FEF00550329 /* BaseViewController.m in Sources */,
+				23DA1A171D4210BF00550329 /* AppDelegate.m in Sources */,
+				23DA1A8E1D430D3500550329 /* ClassifyViewController.m in Sources */,
+				23DA1A141D4210BF00550329 /* main.m in Sources */,
+				23DA1A651D42187900550329 /* LauncherViewController.m in Sources */,
+				23DA1AA21D43536800550329 /* GTTabBar.m in Sources */,
+				23DA1A791D42203700550329 /* UIImage+CH.m in Sources */,
+				23DA1A9F1D43535C00550329 /* GTTabBarController.m in Sources */,
+				23DA1A7F1D42223600550329 /* UIBarButtonItem+CH.m in Sources */,
+				23DA1A911D430D5D00550329 /* NewsViewController.m in Sources */,
+				23DA1A981D430E4200550329 /* FeatureViewController.m in Sources */,
+				23DA1A8B1D4223B200550329 /* MeViewController.m in Sources */,
+				23DA1AA51D4357D200550329 /* MainFrameManager.m in Sources */,
+				23DA1A881D42239C00550329 /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23DA1A241D4210BF00550329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23DA1A2D1D4210BF00550329 /* FreshFruitsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23DA1A2F1D4210BF00550329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23DA1A381D4210BF00550329 /* FreshFruitsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23DA1A2A1D4210BF00550329 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23DA1A0E1D4210BF00550329 /* FreshFruits */;
+			targetProxy = 23DA1A291D4210BF00550329 /* PBXContainerItemProxy */;
+		};
+		23DA1A351D4210BF00550329 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23DA1A0E1D4210BF00550329 /* FreshFruits */;
+			targetProxy = 23DA1A341D4210BF00550329 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		23DA1A3A1D4210BF00550329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23DA1A3B1D4210BF00550329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23DA1A3D1D4210BF00550329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/FreshFruits/FreshFruits-prefix.pch";
+				INFOPLIST_FILE = FreshFruits/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.richiequan.FreshFruits;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		23DA1A3E1D4210BF00550329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/FreshFruits/FreshFruits-prefix.pch";
+				INFOPLIST_FILE = FreshFruits/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.richiequan.FreshFruits;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		23DA1A401D4210BF00550329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FreshFruitsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.richiequan.FreshFruitsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreshFruits.app/FreshFruits";
+			};
+			name = Debug;
+		};
+		23DA1A411D4210BF00550329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FreshFruitsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.richiequan.FreshFruitsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreshFruits.app/FreshFruits";
+			};
+			name = Release;
+		};
+		23DA1A431D4210BF00550329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FreshFruitsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.richiequan.FreshFruitsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FreshFruits;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		23DA1A441D4210BF00550329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FreshFruitsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.richiequan.FreshFruitsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FreshFruits;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23DA1A0A1D4210BF00550329 /* Build configuration list for PBXProject "FreshFruits" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23DA1A3A1D4210BF00550329 /* Debug */,
+				23DA1A3B1D4210BF00550329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23DA1A3C1D4210BF00550329 /* Build configuration list for PBXNativeTarget "FreshFruits" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23DA1A3D1D4210BF00550329 /* Debug */,
+				23DA1A3E1D4210BF00550329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23DA1A3F1D4210BF00550329 /* Build configuration list for PBXNativeTarget "FreshFruitsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23DA1A401D4210BF00550329 /* Debug */,
+				23DA1A411D4210BF00550329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23DA1A421D4210BF00550329 /* Build configuration list for PBXNativeTarget "FreshFruitsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23DA1A431D4210BF00550329 /* Debug */,
+				23DA1A441D4210BF00550329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23DA1A071D4210BF00550329 /* Project object */;
+}

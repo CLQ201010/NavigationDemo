@@ -1,0 +1,18 @@
+//
+//  FreshFruits-prefix.pch
+//  FreshFruits
+//
+//  Created by clq on 16/7/22.
+//  Copyright © 2016年 clq. All rights reserved.
+//
+
+#ifndef FreshFruits_prefix_pch
+#define FreshFruits_prefix_pch
+
+#import "UIImage+CH.h"
+#import "UIBarButtonItem+CH.h"
+#import "UIView+MJ.h"
+#import "Common.h"
+#import "Singleton.h"
+
+#endif /* FreshFruits_prefix_pch */
