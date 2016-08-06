@@ -12,7 +12,16 @@
 #import "UIImage+CH.h"
 #import "UIBarButtonItem+CH.h"
 #import "UIView+MJ.h"
-#import "Common.h"
+#import "GlobalDefines.h"
 #import "Singleton.h"
+
+//自动布局
+#import "SDAutoLayout.h"
+//json和model互转
+#import "MJExtension.h"
+//网络请求
+#import "AFNetworking.h"
+//刷新控件
+#import "MJRefresh.h"
 
 #endif /* FreshFruits_prefix_pch */

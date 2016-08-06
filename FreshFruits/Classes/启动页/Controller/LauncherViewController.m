@@ -8,6 +8,7 @@
 
 #import "LauncherViewController.h"
 #import "MainFrameManager.h"
+#import "CCLocationManager.h"
 
 @interface LauncherViewController ()
 
@@ -18,10 +19,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    // 加载主框架
+    // 1.加载主框架
     [[MainFrameManager sharedmain] loadMainFrame];
+    
+    // 2.开启定位服务
+    [self openLocationService];
 }
 
+- (void)openLocationService
+{
+    [[CCLocationManager shareLocation] openLocation];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

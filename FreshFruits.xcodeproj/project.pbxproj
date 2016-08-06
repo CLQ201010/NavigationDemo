@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		231F34D71D53449B00975C5A /* CCLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 231F34D61D53449B00975C5A /* CCLocationManager.m */; };
+		231F34DA1D54381A00975C5A /* CityPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 231F34D91D54381A00975C5A /* CityPickerViewController.m */; };
+		231F34DC1D543CA600975C5A /* City.plist in Resources */ = {isa = PBXBuildFile; fileRef = 231F34DB1D543CA600975C5A /* City.plist */; };
 		23DA1A141D4210BF00550329 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1A131D4210BF00550329 /* main.m */; };
 		23DA1A171D4210BF00550329 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1A161D4210BF00550329 /* AppDelegate.m */; };
 		23DA1A1F1D4210BF00550329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23DA1A1E1D4210BF00550329 /* Assets.xcassets */; };
@@ -26,6 +29,7 @@
 		23DA1AA21D43536800550329 /* GTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1AA11D43536800550329 /* GTTabBar.m */; };
 		23DA1AA51D4357D200550329 /* MainFrameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1AA41D4357D200550329 /* MainFrameManager.m */; };
 		23DA1AA81D437FEF00550329 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1AA71D437FEF00550329 /* BaseViewController.m */; };
+		6BD539C6D937E2E003AEAA25 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B4976141B1A9F9F9C102DB /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		231F34D51D53449B00975C5A /* CCLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLocationManager.h; sourceTree = "<group>"; };
+		231F34D61D53449B00975C5A /* CCLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLocationManager.m; sourceTree = "<group>"; };
+		231F34D81D54381A00975C5A /* CityPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityPickerViewController.h; sourceTree = "<group>"; };
+		231F34D91D54381A00975C5A /* CityPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityPickerViewController.m; sourceTree = "<group>"; };
+		231F34DB1D543CA600975C5A /* City.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = City.plist; sourceTree = "<group>"; };
 		23DA1A0F1D4210BF00550329 /* FreshFruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshFruits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DA1A131D4210BF00550329 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		23DA1A151D4210BF00550329 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,7 +76,7 @@
 		23DA1A7C1D42223600550329 /* UIBarButtonItem+CH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+CH.m"; sourceTree = "<group>"; };
 		23DA1A7D1D42223600550329 /* UIView+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJ.h"; sourceTree = "<group>"; };
 		23DA1A7E1D42223600550329 /* UIView+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJ.m"; sourceTree = "<group>"; };
-		23DA1A841D42237500550329 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		23DA1A841D42237500550329 /* GlobalDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDefines.h; sourceTree = "<group>"; };
 		23DA1A851D42237500550329 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		23DA1A861D42239C00550329 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		23DA1A871D42239C00550329 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
@@ -88,6 +97,9 @@
 		23DA1AA41D4357D200550329 /* MainFrameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainFrameManager.m; sourceTree = "<group>"; };
 		23DA1AA61D437FEF00550329 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		23DA1AA71D437FEF00550329 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		552899E811161C4FD374291A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D5B4976141B1A9F9F9C102DB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F500E1EF10FDC29BA75A8E4A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BD539C6D937E2E003AEAA25 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +128,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		231F34D41D53449B00975C5A /* CCLocation */ = {
+			isa = PBXGroup;
+			children = (
+				231F34D51D53449B00975C5A /* CCLocationManager.h */,
+				231F34D61D53449B00975C5A /* CCLocationManager.m */,
+			);
+			path = CCLocation;
+			sourceTree = "<group>";
+		};
 		23DA1A061D4210BF00550329 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +144,8 @@
 				23DA1A2B1D4210BF00550329 /* FreshFruitsTests */,
 				23DA1A361D4210BF00550329 /* FreshFruitsUITests */,
 				23DA1A101D4210BF00550329 /* Products */,
+				47171F34572BBDBE997932B1 /* Pods */,
+				2EE7DC5A5460BB3113603400 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +169,7 @@
 				23DA1A161D4210BF00550329 /* AppDelegate.m */,
 				23DA1A1E1D4210BF00550329 /* Assets.xcassets */,
 				23DA1A231D4210BF00550329 /* Info.plist */,
+				231F34DB1D543CA600975C5A /* City.plist */,
 				23DA1A121D4210BF00550329 /* Supporting Files */,
 			);
 			path = FreshFruits;
@@ -345,6 +370,8 @@
 			children = (
 				23DA1A861D42239C00550329 /* HomeViewController.h */,
 				23DA1A871D42239C00550329 /* HomeViewController.m */,
+				231F34D81D54381A00975C5A /* CityPickerViewController.h */,
+				231F34D91D54381A00975C5A /* CityPickerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -399,6 +426,7 @@
 		23DA1A751D42203700550329 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				231F34D41D53449B00975C5A /* CCLocation */,
 				23DA1A831D42237500550329 /* Common */,
 				23DA1A761D42203700550329 /* Category */,
 			);
@@ -421,7 +449,7 @@
 		23DA1A831D42237500550329 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				23DA1A841D42237500550329 /* Common.h */,
+				23DA1A841D42237500550329 /* GlobalDefines.h */,
 				23DA1A851D42237500550329 /* Singleton.h */,
 			);
 			path = Common;
@@ -477,6 +505,23 @@
 			path = Launcher;
 			sourceTree = "<group>";
 		};
+		2EE7DC5A5460BB3113603400 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5B4976141B1A9F9F9C102DB /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47171F34572BBDBE997932B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				552899E811161C4FD374291A /* Pods.debug.xcconfig */,
+				F500E1EF10FDC29BA75A8E4A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -484,9 +529,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23DA1A3C1D4210BF00550329 /* Build configuration list for PBXNativeTarget "FreshFruits" */;
 			buildPhases = (
+				4C98672EFA8029EB52DBF0BB /* Check Pods Manifest.lock */,
 				23DA1A0B1D4210BF00550329 /* Sources */,
 				23DA1A0C1D4210BF00550329 /* Frameworks */,
 				23DA1A0D1D4210BF00550329 /* Resources */,
+				BF4F3DD95077EF1A459D68D5 /* Embed Pods Frameworks */,
+				A8B21CAE7CF41B42B9A95CA4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -581,6 +629,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23DA1A1F1D4210BF00550329 /* Assets.xcassets in Resources */,
+				231F34DC1D543CA600975C5A /* City.plist in Resources */,
 				23DA1A9C1D43126700550329 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -601,12 +650,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C98672EFA8029EB52DBF0BB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A8B21CAE7CF41B42B9A95CA4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF4F3DD95077EF1A459D68D5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		23DA1A0B1D4210BF00550329 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				23DA1A801D42223600550329 /* UIView+MJ.m in Sources */,
+				231F34DA1D54381A00975C5A /* CityPickerViewController.m in Sources */,
 				23DA1AA81D437FEF00550329 /* BaseViewController.m in Sources */,
 				23DA1A171D4210BF00550329 /* AppDelegate.m in Sources */,
 				23DA1A8E1D430D3500550329 /* ClassifyViewController.m in Sources */,
@@ -614,6 +712,7 @@
 				23DA1A651D42187900550329 /* LauncherViewController.m in Sources */,
 				23DA1AA21D43536800550329 /* GTTabBar.m in Sources */,
 				23DA1A791D42203700550329 /* UIImage+CH.m in Sources */,
+				231F34D71D53449B00975C5A /* CCLocationManager.m in Sources */,
 				23DA1A9F1D43535C00550329 /* GTTabBarController.m in Sources */,
 				23DA1A7F1D42223600550329 /* UIBarButtonItem+CH.m in Sources */,
 				23DA1A911D430D5D00550329 /* NewsViewController.m in Sources */,
@@ -740,6 +839,7 @@
 		};
 		23DA1A3D1D4210BF00550329 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 552899E811161C4FD374291A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/FreshFruits/FreshFruits-prefix.pch";
@@ -754,6 +854,7 @@
 		};
 		23DA1A3E1D4210BF00550329 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F500E1EF10FDC29BA75A8E4A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/FreshFruits/FreshFruits-prefix.pch";
