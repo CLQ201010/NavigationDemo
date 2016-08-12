@@ -28,4 +28,6 @@
 #define kLocationSuccessNotification  @"locationSuccessNotification"
 #define kLocationFailedNotification  @"locationFailedNotification"
 
+#define kTabBarHeight 53.0f
+
 #endif

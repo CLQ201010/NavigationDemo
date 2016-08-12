@@ -8,7 +8,6 @@
 
 #import "GTTabBarController.h"
 #import "GTTabBar.h"
-#define kTabBarHeight 53.0f
 
 static GTTabBarController *gtTabBarController;
 
@@ -45,9 +44,9 @@ static GTTabBarController *gtTabBarController;
 	{
 		viewControllers = [NSMutableArray arrayWithArray:vcs];
 		containerView = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-		transitionView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320.0f, containerView.frame.size.height - kTabBarHeight)];
+		transitionView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, containerView.frame.size.height - kTabBarHeight)];
 		transitionView.backgroundColor =  [UIColor groupTableViewBackgroundColor];
-		tabBar = [[GTTabBar alloc] initWithFrame:CGRectMake(0, containerView.frame.size.height - kTabBarHeight, 320.0f, kTabBarHeight) buttonImages:arr];
+		tabBar = [[GTTabBar alloc] initWithFrame:CGRectMake(0, containerView.frame.size.height - kTabBarHeight, kScreenWidth, kTabBarHeight) buttonImages:arr];
 		tabBar.delegate = self;
         gtTabBarController = self;
         animateDriect = 0;
@@ -82,110 +81,8 @@ static GTTabBarController *gtTabBarController;
 	}
 	else
 	{
-		transitionView.frame = CGRectMake(0, 0, 320.0f, containerView.frame.size.height - kTabBarHeight);
+		transitionView.frame = CGRectMake(0, 0, kScreenWidth, containerView.frame.size.height - kTabBarHeight);
 	}
-}
-
-- (void)hidesTabBar:(BOOL)yesOrNO animated:(BOOL)animated
-{
-    [self hidesTabBar:yesOrNO animated:animated driect:animateDriect];
-}
-
-- (void)hidesTabBar:(BOOL)yesOrNO animated:(BOOL)animated driect:(NSInteger)driect
-{
-    // driect: 0 -- 上下  1 -- 左右
-    NSLog(@"%i,%i", tabBarHidden, yesOrNO);
-    NSInteger kTabBarWidth = kScreenWidth;
-    
-	if (yesOrNO == YES)
-	{
-        if (driect == 0)
-        {
-            if (self.tabBar.frame.origin.y == self.view.frame.size.height)
-            {
-                return;
-            }
-        }
-        else
-        {
-            if (self.tabBar.frame.origin.x == 0 - kTabBarWidth)
-            {
-                return;
-            }
-        }
-	}
-	else
-	{
-        if (driect == 0)
-        {
-            if (self.tabBar.frame.origin.y == self.view.frame.size.height - kTabBarHeight)
-            {
-                return;
-            }
-        }
-        else
-        {
-            if (self.tabBar.frame.origin.x == 0)
-            {
-                return;
-            }
-        }
-	}
-	
-	if (animated == YES)
-	{
-		[UIView beginAnimations:nil context:NULL];
-		[UIView setAnimationDuration:0.3f];
-		if (yesOrNO == YES)
-		{
-            if (driect == 0)
-            {
-                self.tabBar.frame = CGRectMake(self.tabBar.frame.origin.x, self.tabBar.frame.origin.y + kTabBarHeight, self.tabBar.frame.size.width, self.tabBar.frame.size.height);
-            }
-            else
-            {
-                self.tabBar.frame = CGRectMake(0 - kTabBarWidth, self.tabBar.frame.origin.y, self.tabBar.frame.size.width, self.tabBar.frame.size.height);
-            }
-		}
-		else
-		{
-            if (driect == 0)
-            {
-                self.tabBar.frame = CGRectMake(self.tabBar.frame.origin.x, self.tabBar.frame.origin.y - kTabBarHeight, self.tabBar.frame.size.width, self.tabBar.frame.size.height);
-            }
-            else
-            {
-                self.tabBar.frame = CGRectMake(0, self.tabBar.frame.origin.y, self.tabBar.frame.size.width, self.tabBar.frame.size.height);
-            }
-		}
-		[UIView commitAnimations];
-	}
-	else
-	{
-		if (yesOrNO == YES)
-		{
-            if (driect == 0)
-            {
-                self.tabBar.frame = CGRectMake(self.tabBar.frame.origin.x, self.tabBar.frame.origin.y + kTabBarHeight, self.tabBar.frame.size.width, self.tabBar.frame.size.height);
-            }
-            else
-            {
-                self.tabBar.frame = CGRectMake(0 - kTabBarWidth, self.tabBar.frame.origin.y, self.tabBar.frame.size.width, self.tabBar.frame.size.height);
-            }
-		}
-		else
-		{
-            if (driect == 0)
-            {
-                self.tabBar.frame = CGRectMake(self.tabBar.frame.origin.x, self.tabBar.frame.origin.y - kTabBarHeight, self.tabBar.frame.size.width, self.tabBar.frame.size.height);
-            }
-            else
-            {
-                self.tabBar.frame = CGRectMake(0, self.tabBar.frame.origin.y, self.tabBar.frame.size.width, self.tabBar.frame.size.height);
-            }
-		}
-	}
-    tabBarHidden = yesOrNO;
 }
 
 - (NSUInteger)selectedIndex

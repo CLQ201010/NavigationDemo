@@ -8,6 +8,8 @@
 
 #import "MainFrameManager.h"
 #import "GTTabBarController.h"
+#import "BaseNavigationController.h"
+
 #import "HomeViewController.h"
 #import "ClassifyViewController.h"
 #import "FeatureViewController.h"
@@ -34,7 +36,7 @@ SingletonM(main);
     
     // 1.首页
     self.homeVC = [[HomeViewController alloc] init];
-    UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:self.homeVC];
+    BaseNavigationController *homeNav = [[BaseNavigationController alloc] initWithRootViewController:self.homeVC];
     [vcsArray addObject:homeNav];
     
     NSMutableDictionary *homeDic = [[NSMutableDictionary alloc] init];
@@ -45,7 +47,8 @@ SingletonM(main);
     
     // 2.分类
     self.classifyVC = [[ClassifyViewController alloc] init];
-    UINavigationController *classifyNav = [[UINavigationController alloc] initWithRootViewController:self.classifyVC ];
+    self.classifyVC.title = @"分类";
+    BaseNavigationController *classifyNav = [[BaseNavigationController alloc] initWithRootViewController:self.classifyVC ];
     [vcsArray addObject:classifyNav];
     
     NSMutableDictionary *classifyDic = [[NSMutableDictionary alloc] init];
@@ -56,7 +59,8 @@ SingletonM(main);
     
     // 3.精选
     self.featureVC = [[FeatureViewController alloc] init];
-    UINavigationController *featureNav = [[UINavigationController alloc] initWithRootViewController:self.featureVC];
+    self.featureVC.title = @"精选";
+    BaseNavigationController *featureNav = [[BaseNavigationController alloc] initWithRootViewController:self.featureVC];
     [vcsArray addObject:featureNav];
     
     NSMutableDictionary *featureDic = [[NSMutableDictionary alloc] init];
@@ -67,7 +71,8 @@ SingletonM(main);
     
     // 4.我
     self.meVC = [[MeViewController alloc] init];
-    UINavigationController *meNav = [[UINavigationController alloc] initWithRootViewController:self.meVC];
+    self.meVC.title = @"我";
+    BaseNavigationController *meNav = [[BaseNavigationController alloc] initWithRootViewController:self.meVC];
     [vcsArray addObject:meNav];
     
     NSMutableDictionary *meDic = [[NSMutableDictionary alloc] init];
@@ -78,7 +83,8 @@ SingletonM(main);
     
     // 5.资讯
     self.newsVC = [[NewsViewController alloc] init];
-    UINavigationController *newsNav = [[UINavigationController alloc] initWithRootViewController:self.newsVC];
+    self.newsVC.title = @"资讯";
+    BaseNavigationController *newsNav = [[BaseNavigationController alloc] initWithRootViewController:self.newsVC];
     [vcsArray addObject:newsNav];
     
     NSMutableDictionary *newsDic = [[NSMutableDictionary alloc] init];
@@ -91,6 +97,7 @@ SingletonM(main);
     self.tabBarController.delegate = self;
     [self.tabBarController setTabBarTransparent:YES];
     [self.tabBarController.tabBar setBackgroundImage:[UIImage imageNamed:@"tabbar_bg"]];
+    
     [UIApplication sharedApplication].keyWindow.rootViewController = self.tabBarController;
 }
 
