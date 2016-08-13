@@ -11,6 +11,7 @@
 		231F34DA1D54381A00975C5A /* CityPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 231F34D91D54381A00975C5A /* CityPickerViewController.m */; };
 		231F34DC1D543CA600975C5A /* City.plist in Resources */ = {isa = PBXBuildFile; fileRef = 231F34DB1D543CA600975C5A /* City.plist */; };
 		231F34E41D58265F00975C5A /* HomeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 231F34E31D58265F00975C5A /* HomeButton.m */; };
+		2367966A1D5D796C00BED0CC /* LQExpandAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 236796691D5D796C00BED0CC /* LQExpandAnimation.m */; };
 		23DA1A141D4210BF00550329 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1A131D4210BF00550329 /* main.m */; };
 		23DA1A171D4210BF00550329 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DA1A161D4210BF00550329 /* AppDelegate.m */; };
 		23DA1A1F1D4210BF00550329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23DA1A1E1D4210BF00550329 /* Assets.xcassets */; };
@@ -58,6 +59,8 @@
 		231F34DB1D543CA600975C5A /* City.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = City.plist; sourceTree = "<group>"; };
 		231F34E21D58265F00975C5A /* HomeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeButton.h; sourceTree = "<group>"; };
 		231F34E31D58265F00975C5A /* HomeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeButton.m; sourceTree = "<group>"; };
+		236796681D5D796C00BED0CC /* LQExpandAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQExpandAnimation.h; sourceTree = "<group>"; };
+		236796691D5D796C00BED0CC /* LQExpandAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQExpandAnimation.m; sourceTree = "<group>"; };
 		23DA1A0F1D4210BF00550329 /* FreshFruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshFruits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DA1A131D4210BF00550329 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		23DA1A151D4210BF00550329 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -139,6 +142,15 @@
 				231F34D61D53449B00975C5A /* CCLocationManager.m */,
 			);
 			path = CCLocation;
+			sourceTree = "<group>";
+		};
+		236796671D5D796C00BED0CC /* LQExpandAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				236796681D5D796C00BED0CC /* LQExpandAnimation.h */,
+				236796691D5D796C00BED0CC /* LQExpandAnimation.m */,
+			);
+			path = LQExpandAnimation;
 			sourceTree = "<group>";
 		};
 		23DA1A061D4210BF00550329 = {
@@ -433,6 +445,7 @@
 		23DA1A751D42203700550329 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				236796671D5D796C00BED0CC /* LQExpandAnimation */,
 				231F34D41D53449B00975C5A /* CCLocation */,
 				23DA1A831D42237500550329 /* Common */,
 				23DA1A761D42203700550329 /* Category */,
@@ -696,6 +709,7 @@
 				231F34E41D58265F00975C5A /* HomeButton.m in Sources */,
 				23DA1A801D42223600550329 /* UIView+MJ.m in Sources */,
 				231F34DA1D54381A00975C5A /* CityPickerViewController.m in Sources */,
+				2367966A1D5D796C00BED0CC /* LQExpandAnimation.m in Sources */,
 				23DA1AA81D437FEF00550329 /* BaseViewController.m in Sources */,
 				23DA1A171D4210BF00550329 /* AppDelegate.m in Sources */,
 				23DA1A8E1D430D3500550329 /* ClassifyViewController.m in Sources */,
