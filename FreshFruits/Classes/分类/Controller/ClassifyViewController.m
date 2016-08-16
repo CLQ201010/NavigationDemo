@@ -9,9 +9,8 @@
 #import "ClassifyViewController.h"
 #import "LQExpandAnimation.h"
 
-@interface ClassifyViewController () <UITableViewDataSource,UITableViewDelegate,UIViewControllerTransitioningDelegate,LQExpandAnimationFromViewAnimationsAdapter>
+@interface ClassifyViewController () <UIViewControllerTransitioningDelegate,LQExpandAnimationFromViewAnimationsAdapter>
 
-@property (nonatomic,weak) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *datas;
 @property (nonatomic,weak) UIViewController *vc;
 
@@ -32,21 +31,13 @@
 
 - (void)setupUI
 {
-    self.view.backgroundColor = [UIColor greenColor];
-    
     [self setupTableView];
 }
 
 - (void)setupTableView
 {
-    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.frame];
-    tableView.contentInset = UIEdgeInsetsMake(0, 0, 108, 0);
-    tableView.delegate = self;
-    tableView.dataSource = self;
-    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    [self.view addSubview:tableView];
-    
-    _tableView = tableView;
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 44, 0);
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 #pragma mark 属性变量
@@ -92,7 +83,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.datas.count;
+    return 20;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -116,7 +107,9 @@
     UITableViewCell *selectCell = [tableView cellForRowAtIndexPath:indexPath];
     
     self.expandAnimation.collapsedViewFrame = ^(){
-        return selectCell.frame;
+        CGRect rect = selectCell.frame;
+        rect.origin.y = selectCell.frame.origin.y - tableView.bounds.origin.y;
+        return rect;
     };
     
     UIViewController *VC = [[UIViewController alloc] init];

@@ -104,6 +104,7 @@
 		23DA1AA71D437FEF00550329 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		23E0C9FF1D5C4D4100AB1A95 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		23E0CA001D5C4D4100AB1A95 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		23FA00E61D62AD6E005EE814 /* FreshFruits-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FreshFruits-Bridging-Header.h"; sourceTree = "<group>"; };
 		552899E811161C4FD374291A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D5B4976141B1A9F9F9C102DB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F500E1EF10FDC29BA75A8E4A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -195,6 +196,7 @@
 			children = (
 				23DA1A131D4210BF00550329 /* main.m */,
 				23DA1A7A1D4220AB00550329 /* FreshFruits-prefix.pch */,
+				23FA00E61D62AD6E005EE814 /* FreshFruits-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -852,7 +854,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/FreshFruits/FreshFruits-prefix.pch";
 				INFOPLIST_FILE = FreshFruits/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.richiequan.FreshFruits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -871,7 +873,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/FreshFruits/FreshFruits-prefix.pch";
 				INFOPLIST_FILE = FreshFruits/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.richiequan.FreshFruits;
 				PRODUCT_NAME = "$(TARGET_NAME)";

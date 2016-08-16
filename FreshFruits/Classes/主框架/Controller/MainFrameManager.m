@@ -47,7 +47,7 @@ SingletonM(main);
     
     // 2.分类
     self.classifyVC = [[ClassifyViewController alloc] init];
-    self.classifyVC.title = @"分类";
+    self.classifyVC.title = @"自定义presentViewController动画";
     BaseNavigationController *classifyNav = [[BaseNavigationController alloc] initWithRootViewController:self.classifyVC ];
     [vcsArray addObject:classifyNav];
     
@@ -59,7 +59,7 @@ SingletonM(main);
     
     // 3.精选
     self.featureVC = [[FeatureViewController alloc] init];
-    self.featureVC.title = @"精选";
+    self.featureVC.title = @"自定义pushViewController动画";
     BaseNavigationController *featureNav = [[BaseNavigationController alloc] initWithRootViewController:self.featureVC];
     [vcsArray addObject:featureNav];
     

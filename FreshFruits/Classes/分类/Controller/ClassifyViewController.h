@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
-@interface ClassifyViewController : BaseViewController
+@interface ClassifyViewController : UITableViewController
 
 @end
