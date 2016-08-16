@@ -9,6 +9,7 @@
 #import "LauncherViewController.h"
 #import "MainFrameManager.h"
 #import "CCLocationManager.h"
+#import "LoadingViewController.h"
 
 @interface LauncherViewController ()
 
@@ -24,6 +25,10 @@
     
     // 2.开启定位服务
     [self openLocationService];
+    
+    // 3.进入主页面动画
+    LoadingViewController *loadingVC = [[LoadingViewController alloc] init];
+    [[[MainFrameManager sharedmain] tabBarController].view addSubview:loadingVC.view];
 }
 
 - (void)openLocationService
